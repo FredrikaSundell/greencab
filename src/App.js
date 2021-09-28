@@ -5,7 +5,7 @@ function App() {
     <div className="container">
       <LandingPage />
     </div>
-  );
+  )
 }
 
 export default App;
