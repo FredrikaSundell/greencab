@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: rgba(211, 233, 193, 1);
+  margin: 0;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.app-inner {
+  max-width: 400px;
+  width: 100%;
 }
 
 .card {
@@ -41,4 +56,49 @@ body {
 
 .link-button-back {
   background: red;
+}
+
+.input {
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+}
+
+.input-wrapper {
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  margin: 0 15px;
+}
+
+.input-wrapper.input-wrapper-to {
+  margin-top: 15px;
+}
+
+.location-button {
+}
+
+.time-buttons {
+  background: rgba(0, 0, 0, 0.25);
+  margin: 50px;
+}
+
+.time-and-date {
+  background: rgba(0, 0, 0, 0.25);
+  margin: 50px;
+}
+
+.map-img {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.link-button-choose {
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+  justify-content: center;
 }

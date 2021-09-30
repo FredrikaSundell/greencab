@@ -12,12 +12,13 @@ const Search = () => {
       <div>
         <LinkButtonBack to="/">LandingPage</LinkButtonBack>
       </div>
-      <div>
+      <div className="input-wrapper">
         <Input
           value={fromInput}
           onChange={(e) => setFromInput(e.target.value)}
         />
         <button
+          className="location-button"
           onClick={() => {
             console.log(fromInput, toInput)
           }}
@@ -25,12 +26,23 @@ const Search = () => {
           X
         </button>
       </div>
-      <div>
+      <div className="input-wrapper input-wrapper-to">
         <Input value={toInput} onChange={(e) => setToInput(e.target.value)} />
       </div>
-      <h1>Hey from SearchPage</h1>
-      <h2>blablabla</h2>
-      <LinkButton to="/choose">Choose</LinkButton>
+      <div className="time-buttons">
+        <button>X</button>
+        <button>X</button>
+        <button>X</button>
+      </div>
+      <div className="time-and-date">
+        <p>TID och Datum</p>
+      </div>
+      <div className="map-img">
+        <p>KARTA</p>
+      </div>
+      <div className="link-button-choose">
+        <LinkButton to="/choose">Choose</LinkButton>
+      </div>
     </div>
   )
 }
