@@ -3,14 +3,18 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+import DateFnsUtils from '@date-io/date-fns' // choose your lib
+import { MuiPickersUtilsProvider } from '@material-ui/pickers'
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className="app-wrapper">
-      <div className="app-inner">
-        <App />
+    <MuiPickersUtilsProvider utils={DateFnsUtils}>
+      <div className="app-wrapper">
+        <div className="app-inner">
+          <App />
+        </div>
       </div>
-    </div>
+    </MuiPickersUtilsProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

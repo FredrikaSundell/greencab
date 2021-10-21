@@ -1,6 +1,7 @@
 import LinkButton from './buttons/LinkButton'
 import LinkButtonBack from './buttons/LinkButtonBack'
 import Input from './Input'
+import DateTime from './dateTime/DateTime'
 import { useState } from 'react'
 
 const Search = () => {
@@ -35,7 +36,7 @@ const Search = () => {
         <button>X</button>
       </div>
       <div className="time-and-date">
-        <p>TID och Datum</p>
+        <DateTime />
       </div>
       <div className="map-img">
         <p>KARTA</p>

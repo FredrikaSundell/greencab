@@ -18,6 +18,8 @@ body {
 .app-inner {
   max-width: 400px;
   width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .card {
@@ -88,6 +90,11 @@ body {
 .time-and-date {
   background: rgba(0, 0, 0, 0.25);
   margin: 50px;
+  padding: 20px;
+}
+
+.datepicker {
+  width: 100%;
 }
 
 .map-img {
