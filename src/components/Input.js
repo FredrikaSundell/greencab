@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 function Input({ value, onChange }) {
   return (
     <input onChange={onChange} value={value} className="input" type="text" />

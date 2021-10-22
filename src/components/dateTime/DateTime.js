@@ -6,6 +6,10 @@ function DateTime() {
   return (
     <DateTimePicker
       className="datepicker"
+      label="DateTimePicker"
+      inputVariant="outlined"
+      disablePast
+      showTodayButton
       ampm={false}
       value={selectedDate}
       onChange={handleDateChange}

@@ -79,9 +79,6 @@ body {
   margin-top: 15px;
 }
 
-.location-button {
-}
-
 .time-buttons {
   background: rgba(0, 0, 0, 0.25);
   margin: 50px;
@@ -97,8 +94,8 @@ body {
   width: 100%;
 }
 
-.map-img {
-  background: rgba(0, 0, 0, 0.25);
+.map-container {
+  height: 200px;
 }
 
 .link-button-choose {

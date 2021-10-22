@@ -3,6 +3,7 @@ import LinkButtonBack from './buttons/LinkButtonBack'
 import Input from './Input'
 import DateTime from './dateTime/DateTime'
 import { useState } from 'react'
+import Map from './map/Map'
 
 const Search = () => {
   const [fromInput, setFromInput] = useState('')
@@ -38,8 +39,8 @@ const Search = () => {
       <div className="time-and-date">
         <DateTime />
       </div>
-      <div className="map-img">
-        <p>KARTA</p>
+      <div className="map-container">
+        <Map from={fromInput} to={toInput} />
       </div>
       <div className="link-button-choose">
         <LinkButton to="/choose">Choose</LinkButton>
