@@ -5,7 +5,7 @@ function Cart() {
   return (
     <div>
       <div className="map-container-in-cart">
-        <Map />
+        <Map directions={{ from: 'Stockholm', to: 'Uppsala' }} />
       </div>
       <h1>info om bokad resa</h1>
       <div className="link-button-choose">

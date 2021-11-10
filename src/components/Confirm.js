@@ -1,13 +1,18 @@
 import LinkButton from './buttons/LinkButton'
 import LinkButtonBack from './buttons/LinkButtonBack'
 import Map from './map/Map'
-import Card from './Card'
+import Card from './card/Card'
+import { getGlobalState } from '../store'
 
 function Confirm() {
+  const isChildSeat = getGlobalState('isChildSeat')
+
+  console.log(444, isChildSeat)
+
   return (
     <div>
       <div className="map-container-in-search">
-        <Map />
+        <Map directions={{ from: 'Stockholm', to: 'Uppsala' }} />
       </div>
       <div className="landing-info">
         <Card>

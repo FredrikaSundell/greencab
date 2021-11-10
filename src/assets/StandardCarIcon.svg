@@ -1,0 +1,30 @@
+<svg width="47" height="21" viewBox="0 0 47 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.5 15.6626H1" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M1 15.6626V9.40173" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M1 9.4018C1 8.14962 2 7.31484 3.5 6.27136" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M3.5 6.27133C7.9 2.93219 9 2.09741 9 2.09741" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M13.5 12.5322H11" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M25.5 10.9669H22.5" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M16 15.6627L13.5 12.5322" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M22.5 15.6626H12" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M20 13.054C22 15.1409 22.5 15.6627 22.5 15.6627" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M22.5 15.6626C31.7 15.6626 34 15.6626 34 15.6626" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M20 7.83655V13.0539" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M15.5 7.83658C13.1 6.58441 12.5 6.27136 12.5 6.27136" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M12.5 2.09741V6.27133" stroke="#F3F9F0"/>
+<path d="M34 7.83655H41C42.306 7.83655 43.3989 8.32602 44 8.78193M44.5 9.40177C44.5 9.25694 44.3194 9.02417 44 8.78193M44 8.78193C44.5 9.16245 45.3735 10.0493 45.5 10.4452C46 12.0105 46 12.0105 46 12.5322" stroke="#F3F9F0"/>
+<line x1="9" y1="2.11914" x2="25" y2="2.11914" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M9 2.09741L5.40045 1.04345" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M25 2.09741C27 2.09741 31.6667 5.74959 34 7.83654" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M46 12.5322V15.3496" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M46 15.3496H42.3904" stroke="#F3F9F0" stroke-linecap="round"/>
+<path d="M41.75 15.454C41.75 17.6635 40.0413 19.3996 38 19.3996C35.9587 19.3996 34.25 17.6635 34.25 15.454C34.25 13.2444 35.9587 11.5083 38 11.5083C40.0413 11.5083 41.75 13.2444 41.75 15.454Z" stroke="#F3F9F0" stroke-width="1.5"/>
+<line x1="40.5" y1="12.554" x2="45.5" y2="12.554" stroke="#F3F9F0"/>
+<line x1="35.7998" y1="7.83655" x2="35.7998" y2="12.0105" stroke="#F3F9F0"/>
+<line x1="34.5" y1="7.81482" x2="15.5" y2="7.81482" stroke="#F3F9F0"/>
+<path d="M20 2.09741C20 6.68872 20 7.83654 20 7.83654" stroke="#F3F9F0"/>
+<ellipse cx="38" cy="15.4539" rx="1.5" ry="1.56522" fill="#F3F9F0"/>
+<path d="M11.9502 15.454C11.9502 17.6635 10.2415 19.3996 8.2002 19.3996C6.15889 19.3996 4.4502 17.6635 4.4502 15.454C4.4502 13.2444 6.15889 11.5083 8.2002 11.5083C10.2415 11.5083 11.9502 13.2444 11.9502 15.454Z" stroke="#F3F9F0" stroke-width="1.5"/>
+<ellipse cx="8.2002" cy="15.4539" rx="1.5" ry="1.56522" fill="#F3F9F0"/>
+<path d="M1 12.5322H5.5" stroke="#F3F9F0" stroke-linecap="round"/>
+</svg>

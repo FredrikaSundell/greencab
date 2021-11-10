@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, memo } from 'react'
 import {
   GoogleMap,
   useJsApiLoader,
@@ -16,7 +16,7 @@ const center = {
   lng: 18.06501429882336,
 }
 
-const Map = ({ from, to }) => {
+const Map = ({ from, to, directions }) => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY,
@@ -55,51 +55,55 @@ const Map = ({ from, to }) => {
         mapTypeControl: false,
       }}
     >
-      <DirectionsService
-        // required
-        options={{
-          destination: 'Uppsala',
-          origin: 'Stockholm',
-          travelMode: 'DRIVING',
-        }}
-        // required
-        callback={directionsCallback}
-        // optional
-        onLoad={(directionsService) => {
-          console.log(
-            'DirectionsService onLoad directionsService: ',
-            directionsService
-          )
-        }}
-        // optional
-        onUnmount={(directionsService) => {
-          console.log(
-            'DirectionsService onUnmount directionsService: ',
-            directionsService
-          )
-        }}
-      />
-      {!!directionsResponse && (
-        <DirectionsRenderer
-          // required
-          options={{
-            directions: directionsResponse,
-          }}
-          // optional
-          onLoad={(directionsRenderer) => {
-            console.log(
-              'DirectionsRenderer onLoad directionsRenderer: ',
-              directionsRenderer
-            )
-          }}
-          // optional
-          onUnmount={(directionsRenderer) => {
-            console.log(
-              'DirectionsRenderer onUnmount directionsRenderer: ',
-              directionsRenderer
-            )
-          }}
-        />
+      {directions.from && directions.to && (
+        <>
+          <DirectionsService
+            // required
+            options={{
+              destination: directions.to,
+              origin: directions.from,
+              travelMode: 'DRIVING',
+            }}
+            // required
+            callback={directionsCallback}
+            // optional
+            onLoad={(directionsService) => {
+              console.log(
+                'DirectionsService onLoad directionsService: ',
+                directionsService
+              )
+            }}
+            // optional
+            onUnmount={(directionsService) => {
+              console.log(
+                'DirectionsService onUnmount directionsService: ',
+                directionsService
+              )
+            }}
+          />
+          {!!directionsResponse && (
+            <DirectionsRenderer
+              // required
+              options={{
+                directions: directionsResponse,
+              }}
+              // optional
+              onLoad={(directionsRenderer) => {
+                console.log(
+                  'DirectionsRenderer onLoad directionsRenderer: ',
+                  directionsRenderer
+                )
+              }}
+              // optional
+              onUnmount={(directionsRenderer) => {
+                console.log(
+                  'DirectionsRenderer onUnmount directionsRenderer: ',
+                  directionsRenderer
+                )
+              }}
+            />
+          )}
+        </>
       )}
     </GoogleMap>
   ) : (
@@ -107,4 +111,4 @@ const Map = ({ from, to }) => {
   )
 }
 
-export default Map
+export default memo(Map)
