@@ -1,28 +1,28 @@
 import LinkButton from './buttons/LinkButton'
-import LinkButtonBack from './buttons/LinkButtonBack'
+import CancelButton from './buttons/CancelButton'
 import Map from './map/Map'
 import Card from './card/Card'
 
 function Cancel() {
   return (
-    <div>
+    <>
       <div className="map-container-in-search">
         <Map directions={{ from: 'Stockholm', to: 'Uppsala' }} />
       </div>
       <div className="landing-info">
         <Card>
-          <h1>Är du säker på att du vill avboka din resa?</h1>
-          <div>
-            <LinkButtonBack to="/confirm">
-              Jag vill inte avboka min resa
-            </LinkButtonBack>
+          <div className="landing-info">
+            <h1>Är du säker på att du vill avboka din resa?</h1>
+          </div>
+          <div className="cancel-ride-button">
+            <CancelButton to="/Search">Avboka och boka en ny resa</CancelButton>
           </div>
           <div className="link-button-choose">
-            <LinkButton to="/search">Avboka och boka en ny resa</LinkButton>
+            <LinkButton to="/search">Avboka inte resan</LinkButton>
           </div>
         </Card>
       </div>
-    </div>
+    </>
   )
 }
 

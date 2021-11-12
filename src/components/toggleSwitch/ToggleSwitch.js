@@ -6,7 +6,7 @@ const ToggleSwitch = ({ isToggled, toggle, id, label }) => {
       {/* {label} */}
       <input type="checkbox" id={id} checked={isToggled} onChange={toggle} />
       <span className={styles.pseudo} />
-      <span className={styles.label}>hejhej</span>
+      <span className={styles.label}>{label}</span>
     </label>
   )
 }

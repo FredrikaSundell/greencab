@@ -11,6 +11,8 @@
 }
 .switch .label {
   margin-left: 120%;
+  width: max-content;
+  display: block;
 }
 /* Rounded background */
 .switch .pseudo::before {

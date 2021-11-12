@@ -5,6 +5,7 @@ import Card from './card/Card'
 import ToggleSwitch from './toggleSwitch/ToggleSwitch'
 import { useGlobalState } from '../store'
 
+import { ReactComponent as Back } from '../assets/Back.svg'
 import { ReactComponent as StandardCarIcon } from '../assets/StandardCarIcon.svg'
 import { ReactComponent as XLCarIcon } from '../assets/XLCarIcon.svg'
 import { ReactComponent as GoldCarIcon } from '../assets/GoldCarIcon.svg'
@@ -82,7 +83,9 @@ function Choose() {
             </div>
           </div>
           <div>
-            <LinkButtonBack to="/search">Ångra desination</LinkButtonBack>
+            <LinkButtonBack to="/Search">
+              <Back className="back-button" />
+            </LinkButtonBack>
           </div>
         </Card>
       </div>

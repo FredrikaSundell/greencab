@@ -5,9 +5,14 @@ const LandingPage = () => {
   return (
     <Card>
       <div className="landing-info">
-        <h1>Hey LandingPage</h1>
-        <h2>blablabla</h2>
-        <LinkButton to="/search">Search</LinkButton>
+        <h1>
+          Hej Viktor,
+          <br /> Välkommen tillbaka!
+        </h1>
+        <h2>Nu kan du boka en grön taxi och få 10% rabatt på din resa.</h2>
+        <div className="link-button-choose">
+          <LinkButton to="/search">Search</LinkButton>
+        </div>
       </div>
     </Card>
   )

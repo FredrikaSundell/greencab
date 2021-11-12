@@ -3,6 +3,7 @@ import LinkButtonBack from './buttons/LinkButtonBack'
 import Map from './map/Map'
 import Card from './card/Card'
 import { getGlobalState } from '../store'
+import { ReactComponent as Back } from '../assets/Back.svg'
 
 function Confirm() {
   const isChildSeat = getGlobalState('isChildSeat')
@@ -20,7 +21,9 @@ function Confirm() {
           <h1>GULD</h1>
           <h2>info om bil och kostnad</h2>
           <div>
-            <LinkButtonBack to="/choose">Ångra bil/tillval</LinkButtonBack>
+            <LinkButtonBack to="/Choose">
+              <Back className="back-button" />
+            </LinkButtonBack>
           </div>
         </Card>
       </div>

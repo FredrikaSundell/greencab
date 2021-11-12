@@ -1,9 +1,10 @@
 import LinkButton from './buttons/LinkButton'
-import LinkButtonBack from './buttons/LinkButtonBack'
 import Input from './input/Input'
 import DateTime from './dateTime/DateTime'
 import { useState } from 'react'
 import Map from './map/Map'
+import LinkButtonBack from './buttons/LinkButtonBack'
+import { ReactComponent as Back } from '../assets/Back.svg'
 
 const Search = () => {
   const [fromInput, setFromInput] = useState('')
@@ -20,7 +21,9 @@ const Search = () => {
   return (
     <div className="search">
       <div>
-        <LinkButtonBack to="/">LandingPage</LinkButtonBack>
+        <LinkButtonBack to="/">
+          <Back className="back-button" />
+        </LinkButtonBack>
       </div>
       <div className="input-wrapper">
         <Input
