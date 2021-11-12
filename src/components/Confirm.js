@@ -17,9 +17,9 @@ function Confirm() {
       </div>
       <div className="landing-info">
         <Card>
-          <div>bild</div>
-          <h1>GULD</h1>
-          <h2>info om bil och kostnad</h2>
+          <div>Bild på vald bil</div>
+          <h1>Rubrik på bil</h1>
+          <h2>info om bil, resa, rabatt och total kostnad</h2>
           <div>
             <LinkButtonBack to="/Choose">
               <Back className="back-button" />

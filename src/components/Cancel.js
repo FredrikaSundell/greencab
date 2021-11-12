@@ -18,7 +18,7 @@ function Cancel() {
             <CancelButton to="/Search">Avboka och boka en ny resa</CancelButton>
           </div>
           <div className="link-button-choose">
-            <LinkButton to="/search">Avboka inte resan</LinkButton>
+            <LinkButton to="/Cart">Avboka inte resan</LinkButton>
           </div>
         </Card>
       </div>

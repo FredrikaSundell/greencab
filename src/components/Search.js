@@ -47,13 +47,8 @@ const Search = () => {
           onChange={(e) => setToInput(e.target.value)}
         />
       </div>
-      <div>
-        <button onClick={handleSearch}>SÖK</button>
-      </div>
-      <div className="time-buttons">
-        <button>Åka nu</button>
-        <button>Avgång</button>
-        <button>Ankomst</button>
+      <div className="search-button-container">
+        <LinkButton onClick={handleSearch}>SÖK RESA</LinkButton>
       </div>
       <div className="time-and-date">
         <DateTime />
@@ -62,7 +57,7 @@ const Search = () => {
         <Map directions={directions} />
       </div>
       <div className="link-button-choose">
-        <LinkButton to="/choose">Choose</LinkButton>
+        <LinkButton to="/choose">Gå vidare och Välj fordon</LinkButton>
       </div>
     </div>
   )

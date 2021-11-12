@@ -68,6 +68,12 @@ body {
   justify-content: center;
 }
 
+.search-button-container {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 .back-button {
   width: 33px;
   height: 33px;

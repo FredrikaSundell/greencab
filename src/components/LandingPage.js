@@ -1,10 +1,13 @@
 import Card from './card/Card'
 import LinkButton from './buttons/LinkButton'
 
+import { ReactComponent as GreenCabLogo } from '../assets/GreenCabLogo.svg'
+
 const LandingPage = () => {
   return (
     <Card>
       <div className="landing-info">
+        <GreenCabLogo className="greencablogo" />
         <h1>
           Hej Viktor,
           <br /> Välkommen tillbaka!
